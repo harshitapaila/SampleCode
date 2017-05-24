@@ -23,7 +23,7 @@ Load the solution into your Visual Studio using the .sln or .csproj file.
 
 Go to **Tests -> Debug -> All Tests**
 
-You can see the results under the option Debug console in your output window. 
+You can see the results under the option Debug the console in your output window. 
 
 You would need to generate a Call Id for calling Visa Checkout. The documentation for generating Call Id can be found at :
 
