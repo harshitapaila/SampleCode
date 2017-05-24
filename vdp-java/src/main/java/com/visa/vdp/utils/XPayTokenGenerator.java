@@ -9,18 +9,18 @@ import javax.crypto.spec.SecretKeySpec;
 
 
 /**
- * To invoke an API using X-Pay-Token, you will need an API Key and a Shared Secret, 
- * which is provided on the application details page as mentioned in the introduction.
+ * To invoke an API using X-Pay-Token, you will need an API Key and a Shared Secret,
+ * which is provided on the project details page as mentioned in the introduction.
  * This components create X-Pay-Token as x:+ TimestampUTC + : + SHA256Hash
  * Where SHA256Hash means;
- * Shared secret		This is the Shared Secret from the application details page that will be used by both parties as the hash seed.
+ * Shared secret		This is the Shared Secret from the project details page that will be used by both parties as the hash seed.
  * Current Timestamp	This is the current timestamp in UTC (in seconds).
  * API endpoint URI		This is the API endpoint you would like to invoke; e.g.to invoke the API endpoint
  * 							https://sandbox.api.visa.com/vdp/xpaytoken/helloworld?apikey={apiKey}, (eg)
  * 						set the API endpoint URI to /vdp/xpaytoken/helloworld. (eg)
- * APIKey				This is the API Key from the application details page.
+ * APIKey				This is the API Key from the project details page.
  * Request parameters	This is the request JSON object that you plan to send to API endpoint.
- * 
+ *
  * @author mmodi
  *
  */
@@ -28,7 +28,7 @@ public class XPayTokenGenerator {
 
     /**
      * Generate X-Pay-Token as x:+ TimestampUTC + : + SHA256Hash
-     * 
+     *
      * @param payload
      * @param uri
      * @param apiKey
