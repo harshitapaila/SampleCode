@@ -12,7 +12,7 @@ Generate P12 file using the below command
 	
 Notes: 
 * key.pem is the private key which you have generated at the time of creation of CSR. 
-* cert.pem is the client certificate for the app which you have downloaded from the VDP portal. 
+* cert.pem is the client certificate for the project which you have downloaded from the VDP portal. 
 * The above command will prompt for export password. You will need this password for invoking API.
 
 Update app.config with the necesssary credentials. For more information on `app.config` refer :
